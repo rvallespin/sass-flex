@@ -17,3 +17,7 @@
 .nowrap {
   @include no-wrap();
 }
+
+.wrap-reverse {
+  @include wrap-reverse();
+}

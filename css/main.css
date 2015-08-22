@@ -27,6 +27,12 @@
   -ms-flex-wrap: none;
   flex-wrap: nowrap; }
 
+.wrap-reverse {
+  -webkit-flex-wrap: wrap-reverse;
+  -moz-flex-wrap: wrap-reverse;
+  -ms-flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse; }
+
 .col-1 {
   width: 100%; }
 
