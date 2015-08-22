@@ -1,0 +1,58 @@
+@mixin container($value: "") {
+  box-sizing: border-box;
+
+  @if $value == full {
+    width: 100%;
+  } @else {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@mixin width($width: 0) {
+    width: $width;
+}
+
+@mixin flex-size($value: 1) {
+  @if $value == 0auto {
+    //size based on item width/height but INFLEXIBLE to free space WITH shrink to its minimum
+    flex: 0 auto;
+  } @else if $value == auto {
+    //size based on item width/height but FILLS free space
+    flex: auto;
+  } @else if $value == none {
+    //size based on item width/height but totally INFLEXIBLE
+    flex: 0 0 auto;
+  } @else {
+    flex: $value;
+  }
+}
+
+@mixin flex() {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin wrap() {
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+@mixin no-wrap() {
+  -webkit-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -ms-flex-wrap: none;
+  flex-wrap: nowrap;
+}
+@mixin wrap-reverse() {
+  -webkit-flex-wrap: wrap-reverse;
+  -moz-flex-wrap: wrap-reverse;
+  -ms-flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse;
+}

@@ -1,0 +1,71 @@
+.col-1 {
+  @include width(100%);
+}
+
+.col-2 {
+  @include width(50%);
+}
+
+.col-3 {
+  @include width(33.33%);
+}
+
+.col-4 {
+  @include width(25%);
+}
+
+.col-5 {
+  @include width(20%);
+}
+
+.col-6 {
+  @include width(16.667%);
+}
+
+.col-7 {
+  @include width(14.28%);
+}
+
+.col-8 {
+  @include width(12.5%);
+}
+
+.col-9 {
+  @include width(11.1%);
+}
+
+.col-10 {
+  @include width(10%);
+}
+
+.col-11 {
+  @include width(9.09%);
+}
+
+.col-12 {
+  @include width(8.33%);
+}
+
+.flx-auto {
+  @include flex-size(auto);
+}
+
+.flx-0-auto {
+  @include flex-size(0auto);
+}
+
+.flx-none {
+  @include flex-size(none);
+}
+
+.flx-1 {
+  @include flex-size(1);
+}
+
+.flx-2 {
+  @include flex-size(2);
+}
+
+.flx-3 {
+  @include flex-size(3);
+}

@@ -1,0 +1,25 @@
+@mixin box() {
+  position: relative;
+  box-sizing: border-box;
+  min-width: 1em;
+  min-height: 1rem;
+  margin-bottom: 0;
+  background: #ccc;
+  border: 1px solid #eee;
+  border-radius: 2px;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px 15px;
+  color: #fff;
+}
+
+.row{
+  > div {
+    @include box();
+  }
+}
+
+h1 {
+  font-size: 2em;
+  display: block;
+}
